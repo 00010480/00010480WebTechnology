@@ -269,3 +269,129 @@ input[type=submit-request] {
   }
 }
 
+
+/*Premiere properties*/
+/*Container of button style*/
+.container-button {
+    margin-top: 2%;
+    margin-left: 10%;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+}
+/*Button style*/
+.premiere-button {
+/*    bakcgorund color of buttons*/
+    background-color: #3d3d3d;
+/*    color of borders*/
+    border: 5px solid #1f1f1f;
+/*    color of text*/
+    color: white;
+/*    width and height for buttons*/
+    padding: 15px 32px;
+/*    text size of button*/
+    font-size: 16px;
+/*    cursor when you click to the button*/
+    cursor: pointer;
+/*    from left side*/
+    float: left;
+}
+
+/*when we filter movie display none if this is another category of movie*/
+.filterMovies {
+    display: none;
+}
+
+
+.show {
+/*    display an element as a block*/
+    display: block;
+}
+
+
+/*About movie settings*/
+/*get default margin and padding and declare text font*/
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*width and height in percentage for responsive web, declare flexbox and center the text*/
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*all container with grid layout with rows and columns*/
+.container{
+    width: 70%;
+    display: grid;
+/*    declare width of left and right columns*/
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "cover content";
+    box-shadow:-2px 0px 33px 0px rgba(0,0,0,0.75);
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+/*settings for left side image covering all box*/
+.cover{
+    grid-area: cover;
+    height: 80vh;
+/*    source where my image located*/
+    background-image: url('penisula.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+/*settings for box with content declraing flexbox and center text*/
+.box-main{
+    grid-area: content;
+    background:#efefef;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-text{
+    display: flex;
+    flex-direction: row;
+}
+.box-all-text{
+    width: 80%;
+    margin-left: 10%;
+}
+
+/*declaring properties for main text*/
+.box-all-text p{
+    font-size: 16px;
+    color: gray;
+    width: 70%;
+}
+.title{
+    font-size: 64px;
+    color: #000000;
+}
+
+/*settings for ratings of movie*/
+.rating-movie{
+    margin: 50px 0px;
+    width: 45%;
+    
+    display: flex;
+    justify-content: space-between;
+    /*Make vertical line from left side where rating located */
+    border-left: 5px solid rgb(248,97,0);
+}
+
+.rating-movie span{
+    padding-left: 10px;
+    color: gray;
+}
+.second-rating{
+    color: gray;
+}

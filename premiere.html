@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Title of web page-->
+        <title>About Company</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <!-- Logo of image-->
+            <a href="index.html">
+                <img class="logo" src="images/logo.png", alt="logo">
+            </a>
+            <nav>
+                <!-- All navigation bar links-->
+                <ul class="navigation_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-company.html">About US</a></li>
+                    <li><a href="subscription.html">Subscription</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="premiere.html">Premiere</a></li>
+                    <li><a href="about-movie.html">About Movie</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+<!--    buttons for each category-->
+    <div class="container-button">
+        <div id="myBtnContainer">
+<!--            To find out which movie belongs to the each category-->
+            <button class="premiere-button active" onclick="filterSelection('all')">Show all</button>
+            <button class="premiere-button" onclick="filterSelection('action')">Action</button>
+            <button class="premiere-button" onclick="filterSelection('adventure')">Adventure</button>
+            <button class="premiere-button" onclick="filterSelection('drama')">Drama</button>
+            <button class="premiere-button" onclick="filterSelection('thriller')">Thriller</button>
+            <button class="premiere-button" onclick="filterSelection('fantasy')">Fantasy</button>
+        </div>
+    </div>
+        
+<!--    my movie list with class represents each category movie. Example action, adventure-->
+    <div class="movie-filter">
+        <div class="movie-box">
+            <!--list of movies-->
+            <!-- Availabe in https://image.tmdb.org/t/p/w600_and_h900_bestv2/qywXjaaykOlQbaQW64pVOPuzxeM.jpg (31.10.2020)-->
+            <div class="filterMovies action"><a href="about-movie.html"><div class="box"><img src="images/penisula.jpg" alt=""><strong>Penisula</strong><p>Action movie</p></div></a></div>
+            
+            <!-- Availabe in https://image.tmdb.org/t/p/w600_and_h900_bestv2/trfHliK2hhw2xOJVztHqKylyzrD.jpg (31.10.2020)-->
+            <div class="filterMovies adventure"><a href="about-movie.html"><div class="box"><img src="images/barbarians.jpg" alt=""><strong>Barbarians</strong><p>Adventure movie</p></div></a></div>
+            
+            <!-- Availabe in https://image.tmdb.org/t/p/w600_and_h900_bestv2/ahf5cVdooMAlDRiJOZQNuLqa1Is.jpg (31.10.2020)-->
+            <div class="filterMovies drama"><a href="about-movie.html"><div class="box"><img src="images/chicago.jpg" alt=""><strong>The Trial of the Chicago 7</strong><p>Drama movie</p></div></a></div>
+            
+            <!--  Availabe in https://image.tmdb.org/t/p/w600_and_h900_bestv2/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg (31.10.2020)-->
+            <div class="filterMovies action"><a href="about-movie.html"><div class="box"><img src="images/mandarolin.jpg" alt=""><strong>The Mandalorian</strong><p>Action movie</p></div></a></div>
+            
+            <!--Available in https://image.tmdb.org/t/p/w600_and_h900_bestv2/6WC3cIhuaLZSq3SbtdOp2ZTSTe.jpg (31.10.2020)-->
+            <div class="filterMovies thriller"><a href="about-movie.html"><div class="box"><img src="images/unhinged.jpg" alt=""><strong>Unhinged</strong><p>Thriller movie</p></div></a></div>
+
+            <div class="filterMovies fantasy"><a href="about-movie.html"><div class="box"><img src="images/walking-dead.jpg" alt=""><strong>The Walking Dead: World Beyond</strong><p>Fantasy movie</p></div></a></div>
+        </div>
+    </div>
+    </body>
+        
+    
+        
+        <!--Footer block-->
+    <footer class="fixed-footer">
+        <div class="recent-movies"></div>
+        <div class="footer-text">This website was created to fulfill Web Technology module’s requirements and does not represent an actual company or service</div>
+    </footer>
+    
+<!--My JavaScript file with filter category movie-->
+<script src=scripts/category.js></script>  
+    
+</html>
